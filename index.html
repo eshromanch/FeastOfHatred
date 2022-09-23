@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Links </title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body>
+
+    <div id="loader">
+        <div class="drop"></div>
+        <div class="bigCircle"></div>
+       <div class="bigCircleTwo">  </div>
+
+</div>
+
+   <!-- <div class="circles">
+    
+    <div class="bigCircle2 "></div>
+   </div> -->
+    <div class="whole">
+        <div class="thumb">
+            <img src="assets/Frame 1.jpg" alt="" srcset="">
+                </div>
+                <div class="title">
+                    <h1>Feast Of Hatred</h1>
+                    <div class="group">
+                        <h2>Ravenxor </h2>
+            <div class="links">
+                <a target="_blank" href="https://www.instagram.com/_ravenxor_/"><img src="assets/icons8-instagram-48.png" alt="" srcset=""> </a>
+                <a target="_blank" href="https://www.facebook.com/ravenxor"><img src="assets/icons8-facebook-48.png" alt="" srcset=""></a>
+            </div>
+                    </div>
+                    <div class="group">
+                        <h2>Esh Romanch </h2>
+            <div class="links">
+                <a target="_blank" href="https://www.instagram.com/eshromanch/"><img src="assets/icons8-instagram-48.png" alt="" srcset=""> </a>
+                <a target="_blank" href="https://www.facebook.com/esh.romanch/"><img src="assets/icons8-facebook-48.png" alt="" srcset=""></a>
+            </div>
+                    </div>
+                    </div>
+                <section>       
+                    <div class="cards"><img src="assets/Spotify_Logo_CMYK_Green.png" ><a target="_blank" href="https://open.spotify.com/track/5SEW3TAZina3Jp9BcqTaHx?si=_c2jbS_gQzuQ8Rc2HK0dOQ&utm_source=copy-link"> <button>Play</button></a></div>
+                    <div class="cards"><img src="assets/602173aa0ad3230004b93c1b.png" > <button>Coming soon</button></div>
+                    <div class="cards"><img src="assets/580b57fcd9996e24bc43c537.png" > <a target="_blank" href="https://on.soundcloud.com/NTqnS"> <button>Play</button></a></div>
+                    <div class="cards"><img src="assets/youtube-logo-png-46020.png" > <a target="_blank" href="https://youtu.be/o-XHNZXqOGM"> <button>Play</button></a></div>
+                </section>
+            
+    </div>
+
+    <script>
+
+anime({
+  targets: '.drop',
+  translateY: 400,
+  duration: 1500,
+  easing: 'easeInOutExpo',
+  keyframes: [
+    {opacity: 1},
+    {opacity: 0},
+    {opacity: 0},
+  ],
+});
+     
+// anime({
+//     opacity:1,
+//   targets: '.bigCircle',
+//   delay: anime.stagger(1500),
+//   duration: 1000,
+//   easing: 'easeInOutExpo',
+//   height: 500,
+//   width:500,
+
+// keyframes: [
+// {
+//     opacity:0,
+// },
+// {
+//     opacity:5,
+// },
+// {
+//     opacity:1
+// }
+//   ],
+//   begin: function() {
+//     document.querySelector('.bigCircle').style.display = 'block';
+//   },
+ 
+  
+// });
+
+// anime({
+//     opacity:1,
+//   targets: '.bigCircle2',
+//   delay: 3000,
+//   duration: 1000,
+//   easing: 'easeInOutExpo',
+//   height: 100,
+//   width: 100,
+//   begin: function() {
+//     document.querySelector('.bigCircle2').style.display = 'block';
+//   },
+ 
+  
+// });
+
+var load = document.getElementById("loader")
+var whole = document.querySelector(".whole")
+
+        window.addEventListener("load", function(){
+        setTimeout(()=>{
+       load.style.display="none"
+       whole.style.display="block"
+       document.querySelector('.bigCircle').style.display = 'none';
+
+//card animations
+       anime({
+  targets: '.cards',
+  translateX: [-200, 0],
+  duration: 1500,
+  delay: anime.stagger(100)
+});
+        },2500)  
+        })
+
+    </script>
+</body>
+</html>
